@@ -54,9 +54,16 @@ namespace week_6_2
             return 0;
         }
 
+        //public int CompareTo(Product? other)
+        //{
+        //    return this.ProductId.CompareTo(other.ProductId);
+        //}
+
         public int CompareTo(Product? other)
         {
-            return this.ProductId.CompareTo(other.ProductId);
+            return this.UnitPrice.CompareTo(other.UnitPrice);
         }
+
+
     }
 }

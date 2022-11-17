@@ -15,7 +15,7 @@ namespace week_6
 
         public Enemy()
         {
-            Name = "SenaNur";
+            Name = "enemy";
             Health = 100;
             Stamina = 100;
             Damage = 10;
