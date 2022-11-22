@@ -18,7 +18,5 @@ class Program
         manager.Show();
         manager.Remove(1);
         manager.Show();
-
-
     }
 }

@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace First
 {
-    public class Employee
+    public class Employee : IComparable<Employee>
     {
+
         public int Id { get; set; } //field and property
 
         public string FirstName { get; set; }
@@ -17,7 +18,6 @@ namespace First
        
         public Employee()
         {
-
         }
         public Employee(int id, string firstName, string lastName)
         {
@@ -31,5 +31,9 @@ namespace First
             return $"{Id}: {FirstName} {LastName}";
         }
 
+        public int CompareTo(Employee? obj)
+        {
+            return Id.CompareTo(obj);
+        }
     }
 }
